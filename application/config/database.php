@@ -100,6 +100,3 @@ $db['default'] = array(
 );
 // var_dump($db['default']);
 // die;
-$result = $this->db->query("SELECT * FROM tbl_user")->row();
-var_dump($result);
-die;
