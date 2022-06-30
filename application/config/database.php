@@ -98,3 +98,5 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+var_dump($db['default']);
+die;
