@@ -64,8 +64,8 @@ class Example extends CI_Controller
 			exit;
 		}
 		$data['stockobat'] = $this->apotek_data->count_med();
-		$data['stockkat'] = $this->apotek_data->count_cat();
 		die;
+		$data['stockkat'] = $this->apotek_data->count_cat();
 		$data['sup'] = $this->apotek_data->count_sup();
 		$data['unit'] = $this->apotek_data->count_unit();
 		$data['inv'] = $this->apotek_data->count_inv();
