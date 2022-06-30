@@ -75,14 +75,14 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	// 'hostname' => 'localhost',
-	// 'username' => 'root',
-	// 'password' => '',
-	// 'database' => 'apotek',
-	'hostname' => 'remotemysql.com',
-	'username' => 'VDejzT0OIg',
-	'password' => '6kZitUbEsZ',
-	'database' => 'VDejzT0OIg',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'apotek',
+	// 'hostname' => 'remotemysql.com',
+	// 'username' => 'VDejzT0OIg',
+	// 'password' => '6kZitUbEsZ',
+	// 'database' => 'VDejzT0OIg',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -100,3 +100,6 @@ $db['default'] = array(
 );
 // var_dump($db['default']);
 // die;
+$result = $this->db->query("SELECT * FROM tbl_user")->row();
+var_dump($result);
+die;
