@@ -32,6 +32,9 @@ class Example extends CI_Controller
 		// $this->template->write('title', 'Dashboard', TRUE);
 		// $this->template->write('header', 'Dashboard');
 		// $this->template->write_view('content', 'tes/login', '', true);
+		$m = $this->db->query("SELECT * FROM tbl_user")->row();
+		var_dump($m);
+		die;
 		$this->load->view("tes/login");
 		// $this->template->render();
 	}
