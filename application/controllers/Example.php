@@ -63,8 +63,10 @@ class Example extends CI_Controller
 			return redirect("example/login");
 			exit;
 		}
-		$data['stockobat'] = $this->apotek_data->count_med();
+		echo "ok";
+		
 		die;
+		$data['stockobat'] = $this->apotek_data->count_med();
 		$data['stockkat'] = $this->apotek_data->count_cat();
 		$data['sup'] = $this->apotek_data->count_sup();
 		$data['unit'] = $this->apotek_data->count_unit();
