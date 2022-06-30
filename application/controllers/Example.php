@@ -10,7 +10,7 @@ class Example extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('apotek_data');
+		$this->load->model('Apotek_data');
         $this->load->database();
         $this->load->helper(array('form', 'url'));
        
