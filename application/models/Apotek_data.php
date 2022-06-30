@@ -383,7 +383,7 @@ class Apotek_data extends CI_Model
     }
 
     function count_med(){       
-      $cm =  $this->db->query('SELECT * SUM(stok) as totStock FROM table_med'); 
+      $cm =  $this->db->query('SELECT *, SUM(table_med.stok) as totStock FROM table_med'); 
         if ($cm->num_rows() > 0) {
             foreach ($cm->result() as $get) {
                 return $get->totStock;
